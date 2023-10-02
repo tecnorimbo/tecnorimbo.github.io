@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Englebert&display=swap');
+
+
+:root {
+    text-decoration: none;
+    font-family:'Englebert', sans-serif;
+}
+
+body {
+    font-family:'Englebert', sans-serif;
+    background-color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-image: linear-gradient(rgba(5, 7 , 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(../images/background2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    max-width: 100%;
+}
+
+.logo {
+   
+    margin-top: 0.75rem;
+    color: white;
+}
+
+
+  
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    display: flex;
+    align-content: space-between;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    margin: 1rem;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu .navbar ul li a:hover {
+    color: #ffffff;
+    transform: scale(120%);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    
+}
+
+.menu label {
+    display: none;
+    cursor: pointer;
+}
+
+.header-info h1 {
+    color: #0081f2;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.header h1:hover {
+    cursor:default;
+    transition: 1s;
+}
+
+.header-info p {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.header-info p:hover {
+    cursor:default
+}
+
+.tecnorimbo {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    border-bottom: 1px solid #0081f2;
+}
+
+section:nth-child(2n) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.tecnorimbo-1 {
+    padding: 100px;
+    margin: 50px;
+}
+
+.tecnorimbo-1 h2{
+    font-size: 40px;
+    color: #0081f2;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.tecnorimbo-1 p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.text-servicio, .text-contacto {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    text-align:start;
+}
+
+.img-1, .img-2 {
+    width: 600px;
+    margin-right: 30px;
+    border-radius: 1rem;
+}
+
+.footer {
+    text-align: center;
+    background-color:#000000;
+    padding-bottom: 1rem;
+    border-top: 1px solid #0081f2;
+}
+
+.tecnorimbo-3 h2 {
+    color: #0081f2;
+    text-transform: uppercase;
+    padding-block: 10px;
+}
+
+
+.footer-1 {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.img-icon {
+    width: 100px;
+}
+
+.img-footer {
+    width: 150px;
+}
+
+img {
+    width: 50%;
+}
+
+/* Carousel Element */
+#carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Added position relative */
+}
+
+/* Carousel Carets */
+#carousel #carousel-left,
+#carousel #carousel-right {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s linear;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+}
+
+#carousel #carousel-left {
+    left: 0;
+}
+
+#carousel #carousel-right {
+    right: 0;
+}
+
+#carousel #carousel-left:hover,
+#carousel #carousel-right:hover {
+    color: black;
+}
+
+/* Carousel Container */
+#carousel #carousel-container {
+    width: 50%; /* Adjust as needed */
+    padding: 2%;
+}
+  #carousel #carousel-bullets {
+   display: flex;
+  }
+  /* Carousel Bullet Styles */
+  #carousel-bullets .carousel-bullet {
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
+    padding: 2px;
+    cursor: pointer;
+  }
+  #carousel #carousel-bullets .fas.fa-circle {
+    transition: all 0.2s linear;
+  }
+  #carousel #carousel-bullets .fas.fa-circle.active {
+    color: grey;
+  }
+  /* Carousel Slide Styles */
+  .carousel-slide {
+    opacity: 0;
+    z-index: -2;
+    
+    transition: all 0.2s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+
+  
+  .carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .carousel .carousel-item {
+    height: 900px;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit: contain;
+      top: 0;
+      left: 0;
+      
+      min-height: 800px;
+  }
+
+  .carousel-caption {
+    bottom: 0.15rem !important;
+    
+  }
+
+  .carousel-indicators {
+    margin-bottom: 0 !important;
+  }
+
+  .bi-instagram, .bi-whatsapp {
+    color: white;
+    margin: 0 10px;
+   
+  }
+
+  footer {
+    padding: 80px;
+  }
+
+
+
+@media(max-width:960px) {
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        display: none;
+        background-color: #0081f2;
+    }
+
+    .navbar-txt {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header-info h1 {
+        font-size: 3rem;
+    }
+}
+
+
+.cta {
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:linear-gradient(to right,#1e62d0  5%, #4c9dfa 100%);
+	background-color:#3d94f6;
+	border-radius:20px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:6px 24px;
+    
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
+.cta:hover {
+	background:linear-gradient(to right, #1e62d0 5%, #3d94f6 100%);
+	background-color:#97c4fe;
+}
+.cta:active {
+	position:relative;
+	top:1px;
+}
+
+
+@media(max-width:1470px) {
+
+    .menu {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .menu .navbar {
+        top: 100%;
+        left: 0;
+        right: 0;
+        
+    }
+
+    .menu .navbar ul li a {
+        width:100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        padding: 30px;
+    }
+
+
+    .header-info p {
+        font-size: 1rem;
+    }
+
+
+    .logo {
+        margin: 0;
+    }
+
+/*SECTION 2 */
+
+    .tecnorimbo {
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 100px 20px;
+    }
+
+    .tecnorimbo-1 {
+        width: 100%;
+        padding: 0;
+        order: 1;
+    }
+
+    .tecnorimbo-1 p {
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: justify;
+    }
+
+    
+
+    .tecnorimbo h2 {
+        margin-bottom: 15px;
+    }
+
+    .tecnorimbo-2 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-1 {
+        margin: 0 0 20px 0;
+        width: 600px;
+    }
+
+    
+    @media(max-width:1100px) {
+        .tecnorimbo {
+        flex-direction: column;
+    }
+
+    .tecnorimbo-1 {
+        padding-inline: 2rem;
+    }
+
+    .tecnorimbo-2 {
+        order: 2;
+    }
+    
+}
+
+/*FOOTER*/
+@media(max-width:803px) {
+
+    .footer {
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .footer-1 {
+        gap: 5px;
+    }
+
+    .text-footer h2 {
+        font-size: 2rem;
+    }
+
+    .img-foot {
+        width: 200px;
+    }
+
+    }
+}
+
+@media(max-width:400px) {
+
+    .img-1 {
+        width: 290px;
+    }
+
+    .img-icon {
+        width: 70px;
+    }
+
+    .img-foot {
+        width: 150px;
+    }
+
+}
