@@ -64,6 +64,10 @@ a {
     transition: 0.3s;
 }
 
+.navbar-txt {
+    margin: 0;
+}
+
 .menu .navbar ul li a:hover {
     color: #ffffff;
     transform: scale(120%);
