@@ -54,7 +54,7 @@
 
         // Create carousel caption
         const carouselCaption = document.createElement('div');
-        carouselCaption.className = 'carousel-caption mt-5  d-md-block';
+        carouselCaption.className = 'carousel-caption mt-5';
         carouselCaption.innerHTML = `<h5>${curso.titulo}</h5><p>${curso.descripcion}</p>`;
 
 
