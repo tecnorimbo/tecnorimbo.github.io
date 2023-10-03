@@ -297,11 +297,20 @@ img {
     margin-bottom: 0 !important;
   }
 
-  .bi-instagram, .bi-whatsapp {
-    color: white;
-    margin: 0 10px;
-   
-  }
+  .fa-whatsapp {
+    color: #4bf925;
+   margin-left: 20px;
+    text-shadow: 0 0 6px #96f86d;
+    }
+
+    .fill-gradient-instagram {
+        background-clip: text;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        
+        /* needed for browser support */
+        -webkit-background-clip: text; /* see https://caniuse.com/#feat=background-img-opts */
+        -webkit-text-fill-color: transparent; /* https://caniuse.com/#feat=text-stroke */
+      }
 
   footer {
     padding: 80px;
