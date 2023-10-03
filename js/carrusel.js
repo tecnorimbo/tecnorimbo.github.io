@@ -11,7 +11,7 @@
        const titulo = seccion.querySelector('.tecnorimbo-1 p:first-child').textContent.trim();
        const descripcion = seccion.querySelector('.tecnorimbo-1 p:nth-child(2)').textContent.trim();
        const imagen = seccion.querySelector('.tecnorimbo-2 img').getAttribute('src').replace(".png", ".jpg");
-       console.log(imagen)
+     
 
        // Crear un objeto con la información del curso y agregarlo al array
        const curso = {
@@ -27,7 +27,7 @@
    const cursosJSON = JSON.stringify(cursos, null, 2);
 
    // Mostrar el JSON en la consola
-   console.log(cursosJSON);
+   
 
     // Reference to the carousel indicators and inner content
     const indicatorsContainer = document.getElementById('carousel-indicators');
