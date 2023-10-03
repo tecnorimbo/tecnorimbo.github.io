@@ -64,6 +64,10 @@ a {
     transition: 0.3s;
 }
 
+.navbar-txt {
+    margin: 0;
+}
+
 .menu .navbar ul li a:hover {
     color: #ffffff;
     transform: scale(120%);
@@ -283,6 +287,9 @@ img {
 
   .carousel-caption {
     bottom: 0.15rem !important;
+    text-shadow: 0px 0px 8px rgba(0,0,0);
+    background-color:rgba(0,0,0, 0.5); 
+    padding: 20px;
     
   }
 
@@ -365,6 +372,10 @@ img {
         margin-right: 0; /* Para centrar, eliminar el margen derecho */
         border-radius: 1rem;
     }
+
+    .carousel .carousel-item {
+        height: 500px;
+      }
 }
 
 /* Añadir dentro de la media query para tamaños de pantalla medianos, por ejemplo, 803px */
@@ -377,9 +388,10 @@ img {
         gap: 5px;
     }
 
-    .menu .navbar ul li a {
-        font-size: 12px;
-       
+   
+
+    .menu .navbar ul {
+        flex-direction: column;
     }
 
 
