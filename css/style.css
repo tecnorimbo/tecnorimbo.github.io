@@ -50,11 +50,10 @@ a {
 
   
 
-.menu .navbar ul li {
-    position: relative;
-    float: left;
+
+
+.menu .navbar ul {
     display: flex;
-    align-content: space-between;
 }
 
 .menu .navbar ul li a {
