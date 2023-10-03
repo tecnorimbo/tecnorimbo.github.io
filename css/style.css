@@ -369,6 +369,10 @@ img {
         margin-right: 0; /* Para centrar, eliminar el margen derecho */
         border-radius: 1rem;
     }
+
+    .carousel .carousel-item {
+        height: 500px;
+      }
 }
 
 /* Añadir dentro de la media query para tamaños de pantalla medianos, por ejemplo, 803px */
