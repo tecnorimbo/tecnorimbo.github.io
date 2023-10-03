@@ -121,10 +121,7 @@ a {
 
 
 
-.tecnorimbo-1 {
-    padding: 100px;
-    margin: 50px;
-}
+
 
 .tecnorimbo-1 h2{
     font-size: 40px;
@@ -332,54 +329,10 @@ img {
 
 
 
-
-
-
-
-
-@media(max-width:1470px) {
-
-    .menu {
-        padding: 20px;
-        margin: 0;
-    }
-
-    .img-1 {
-        width: 400px;
-    }
-
-    .menu .navbar {
-        top: 100%;
-        left: 0;
-        right: 0;
-        
-    }
-
-    .menu .navbar ul li a {
-        width:100%;
-    }
-
-    #menu:checked ~ .navbar {
-        display: initial;
-    }
-
-    .header-content {
-        padding: 30px;
-    }
-
-
-    .header-info p {
-        font-size: 1rem;
-    }
-
-
-    .logo {
-        margin: 0;
-    }
-
-/*SECTION 2 */
-
+/* Añadir dentro de la media query para tamaños de pantalla más pequeños, por ejemplo, 960px */
+@media (max-width: 960px) {
     .tecnorimbo {
+        flex-direction: column;
         align-items: center;
         text-align: center;
         margin: 0;
@@ -388,8 +341,8 @@ img {
 
     .tecnorimbo-1 {
         width: 100%;
-        padding: 0;
-        order: 1;
+        padding: 20px;
+        
     }
 
     .tecnorimbo-1 p {
@@ -397,8 +350,6 @@ img {
         width: 100%;
         text-align: justify;
     }
-
-    
 
     .tecnorimbo h2 {
         margin-bottom: 15px;
@@ -411,36 +362,19 @@ img {
     }
 
     .img-1 {
-        
-        width: 600px;
+        width: 100%; /* Cambiar el ancho según tus necesidades */
+        margin-right: 0; /* Para centrar, eliminar el margen derecho */
+        border-radius: 1rem;
     }
-
-    
-    @media(max-width:1100px) {
-        .tecnorimbo {
-        flex-direction: column;
-    }
-
-    .tecnorimbo-1 {
-        padding-inline: 2rem;
-    }
-
-    .tecnorimbo-2 {
-        order: 2;
-    }
-    
 }
 
-/*FOOTER*/
-@media(max-width:803px) {
-
-    .footer {
-        align-items: center;
-        margin: 0;
-        padding: 20px;
-    }
-
+/* Añadir dentro de la media query para tamaños de pantalla medianos, por ejemplo, 803px */
+@media (max-width: 803px) {
     .footer-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 5px;
     }
 
@@ -449,46 +383,10 @@ img {
     }
 
     .img-foot {
-        width: 200px;
-    }
-
-    }
-}
-
-@media(max-width:960px) {
-    .menu label {
-        display: initial;
-    }
-
-    .menu .navbar {
-        position: absolute;
-        display: none;
-        background-color: #0081f2;
-    }
-
-    .navbar-txt {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .header-info h1 {
-        font-size: 3rem;
+        width: 100%; /* Cambiar el ancho según tus necesidades */
     }
 }
 
 
-@media(max-width:400px) {
 
-    .img-1 {
-        width: 290px;
-    }
 
-    .img-icon {
-        width: 70px;
-    }
-
-    .img-foot {
-        width: 150px;
-    }
-
-}
