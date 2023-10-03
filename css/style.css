@@ -59,7 +59,7 @@ a {
 
 .menu .navbar ul li a {
     font-size: 18px;
-    margin: 1rem;
+    margin: 0px 20px;
     color: #ffffff;
     display: block;
     transition: 0.3s;
@@ -377,6 +377,12 @@ img {
         align-items: center;
         gap: 5px;
     }
+
+    .menu .navbar ul li a {
+        font-size: 12px;
+       
+    }
+
 
     .text-footer h2 {
         font-size: 2rem;
