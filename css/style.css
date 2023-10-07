@@ -406,6 +406,10 @@ a {
         border-radius: 1rem;
     }
 
+    .img-footer {
+        width: 200px;
+    }
+
     .carousel .carousel-item {
         height: 500px;
       }
@@ -421,7 +425,13 @@ a {
         gap: 5px;
     }
 
-   
+    .float {
+        width:40px;
+        height:40px;
+        bottom:40px;
+        right:40px;
+        font-size: 20px;
+    }
 
     .menu .navbar ul {
         flex-direction: column;
@@ -434,6 +444,9 @@ a {
 
     .img-foot {
         width: 100%; /* Cambiar el ancho según tus necesidades */
+    }
+    .img-footer {
+        width: 200px;
     }
 }
 
