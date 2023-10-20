@@ -344,19 +344,30 @@ img {
 	top:1px;
 }
 
-.float {
+.float{
 	position:fixed;
 	width:60px;
 	height:60px;
 	bottom:40px;
 	right:40px;
-	background-color:#25d366;
-	color:#FFF;
+	
+	
 	border-radius:50px;
 	text-align:center;
-  font-size:40px;
-	box-shadow: 2px 2px 3px #999;
+  font-size:30px;
+	
   z-index:100;
+}
+
+.my-float.fa-whatsapp  {
+    color:#fff;
+    background:
+     linear-gradient(#0081f2,#4082bb) 14% 84%/16% 16% no-repeat,
+     radial-gradient(#0081f2 60%,transparent 0);
+  }
+
+.my-float{
+	margin-top:16px;
 }
 
 footer  {
@@ -427,13 +438,7 @@ a {
         gap: 5px;
     }
 
-    .float {
-        width: 45px;
-        height:45px;
-        bottom:40px;
-        right:40px;
-        font-size: 33px;
-    }
+    
 
     .menu .navbar ul {
         flex-direction: column;
