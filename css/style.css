@@ -359,6 +359,14 @@ img {
   z-index:100;
 }
 
+.calendly-badge-content span {
+    display: none !important;
+}
+
+.calendly-badge-widget {
+    left: 20px !important;
+}
+
 .my-float.fa-whatsapp  {
     color:#fff;
     background:
