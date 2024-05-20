@@ -364,6 +364,7 @@ img {
 }
 
 .calendly-badge-widget {
+    right: 0 !important;
     left: 20px !important;
 }
 
